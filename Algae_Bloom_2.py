@@ -190,31 +190,31 @@ btn7.grid(row=2, column=0, sticky=tk.W + tk.E)
 btn8 = tk.Button(buttonframe, text='8', font=('Modern', 25), command=add_eight)
 btn8.grid(row=2, column=1, sticky=tk.W + tk.E)
 
-clear = tk.Button(root, text='Clear the PH level', font=('Modern', 25), command=clear)
+clear = tk.Button(root, text='CLEAR THE PH LEVEL', font=('Modern', 25), command=clear)
 
 btn9 = tk.Button(buttonframe, text=9, font=('Modern', 25), command=add_nine)
 btn9.grid(row=2, column=2, sticky=tk.W + tk.E)
 
-under18 = tk.Button(temperature, text="Under 18C", font=('Modern', 25), command=under_18)
+under18 = tk.Button(temperature, text="UNDER 18C", font=('Modern', 25), command=under_18)
 under18.grid(row=0, column=0, sticky=tk.W + tk.E)
 
-eightto21 = tk.Button(temperature, text='Between eighteen and twenty one.', font=('Modern', 25), command=eighteen_twentyone)
+eightto21 = tk.Button(temperature, text='BETWEEN 19 AND 21', font=('Modern', 25), command=eighteen_twentyone)
 eightto21.grid(row=0, column=1, sticky=tk.W + tk.E)
 
-over21 = tk.Button(temperature, text='Above 21', font=('Modern', 25), command=over_twentyone)
+over21 = tk.Button(temperature, text='ABOVE 21', font=('Modern', 25), command=over_twentyone)
 over21.grid(row=0, column=3, sticky=tk.W + tk.E)
 
-reset_temp = tk.Button(root, text='Reset temperature', font=('Modern', 25), command=reset_temp)
+reset_temp = tk.Button(root, text='RESET THE SELECTED TEMPERATURE', font=('Modern', 10), command=reset_temp)
 
 information = "Algae blooms can be absolutely terrible for the environment, disrupting the ecosystem and causing permanent disrutions. Because of this, it is important to get rid of them as soon as they appear. To assist with the detection of these algae blooms, I have created a program that uses the temperature and PH level of water to predict whether or not algae blooms are present. Before doing this, however, I ran experiments which determined that the ideal temperature for algae growth is roughly 20 degrees celcius. Please use the buttons to enter your PH level and the temperature of your water. When you are satisfied, press 'submit' to find out whether algae blooms are likely to be in your water or not."
 info = tk.Label(root, text=information, justify='left', wraplength=450, font=('Modern', 15))
 info.pack()
 
-reset = tk.Button(root, text='Reset Everything', font=('Modern', 25), command=reset)
+reset = tk.Button(root, text='RESET EVERYTHING', font=('Modern', 25), command=reset)
 
 submit = tk.Button(root, text="SUBMIT", command=submit)
 
-enter = tk.Button(root, text='Enter the current ph level.', font=('Modern', 25), command=enter)
+enter = tk.Button(root, text='ENTER PH LEVEL', font=('Modern', 25), command=enter)
 
 label = tk.Label(root, text=('PH level =', ph_level), font=('Modern', 25))
 label.pack(padx=50, pady=20)
